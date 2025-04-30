@@ -1,36 +1,7 @@
-import pygame
+#This is an end-to-end assignment, you have to finish by yourself.
 
-# Initialize pygame
-pygame.init()
+#Task1: Create a pygame window, give it a title.
 
-# Define constants
-WIDTH, HEIGHT = 800, 600
-BLUE = (0, 0, 255)
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-WHITE = (255, 255, 255)
+#Task2: Make the window persist.
 
-# Font setup
-font = pygame.font.Font(None, 36)
-
-# Create game window
-window = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption('Brick Game')
-
-# Main game loop (just to show window)
-running = True
-while running:
-    # Process events
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-    
-    # Fill screen with white
-    window.fill(WHITE)
-    
-    # Update display
-    pygame.display.update()
-    
-
-# Quit pygame
-pygame.quit()
+#Task3: Use pygame event handling to handle gracefull shutdown of window.
