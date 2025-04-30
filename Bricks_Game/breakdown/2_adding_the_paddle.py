@@ -1,3 +1,14 @@
+#This is an end-to-end task that you have to finish by yourself.
+#This is basically extending the previous program, so you can use the previous python file.
+
+#Task1: Create a rect object named "paddle" with the following properties.
+#paddle_width = 100, paddle_height = 20, paddle_x = (WIDTH - paddle_width) // 2, paddle_y = HEIGHT - paddle_height - 20
+#paddle_speed = 10
+
+#Task2: Draw this rect object onto the window screen.
+
+#Task3: Using event handling, move the paddle horizontally using left and right arrow keys.
+
 import pygame
 
 # Initialize pygame
