@@ -1,3 +1,10 @@
+#Task1: You have already done all these tasks, now you are wrapping them inside a function named reset_game.
+#Reset ball_x, ball_y, ball_speed_x, ball_speed_y, paddle_x to their initial position.
+#Using nested for loops of brick_rows and brick_cols, arrange the bricks once again to the normal position.
+#You can copy that nested for loops of brick_rows and brick_cols.
+
+#You can find the Task1 by going through the code.
+
 import pygame
 
 # Initialize pygame
@@ -52,23 +59,7 @@ for row in range(brick_rows):
 # Function to reset the game
 def reset_game():
     global ball_x, ball_y, ball_speed_x, ball_speed_y, paddle_x, bricks
-    
-    # Reset ball position
-    ball_x = WIDTH // 2
-    ball_y = HEIGHT // 2
-
-    ball_speed_x, ball_speed_y = 5,5
-    
-    # Reset paddle position
-    paddle_x = (WIDTH - paddle_width) // 2
-    
-    # Recreate bricks
-    bricks = []
-    for row in range(brick_rows):
-        for col in range(brick_cols):
-            brick_x = col * (brick_width + brick_padding) + brick_padding
-            brick_y = row * (brick_height + brick_padding) + brick_padding
-            bricks.append(pygame.Rect(brick_x, brick_y, brick_width, brick_height))
+    #Task1
 
 # Main game loop
 running = True
