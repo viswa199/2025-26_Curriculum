@@ -1,6 +1,9 @@
 #Task1: Using event handling, move the paddle horizontally using left and right arrow keys.
 #apply boundary restrictions, so that the paddle does not leave the window screen.
-#Start from line 42.
+
+#Task2: Add clock functionality to the program. keep 60 frames per second.
+
+#You can find the where to do the Task1 by going through the program.
 
 import pygame
 
@@ -39,6 +42,7 @@ while running:
             running = False
     
     #Add Event Handling for paddle
+    #Task1
     
     # # Fill screen with white
     window.fill(WHITE)

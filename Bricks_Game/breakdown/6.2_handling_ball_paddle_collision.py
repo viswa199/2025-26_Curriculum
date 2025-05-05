@@ -1,4 +1,3 @@
-#Task: Fix the bug in the program.
 import pygame
 
 # Initialize pygame
@@ -14,9 +13,14 @@ WHITE = (255, 255, 255)
 # Font setup
 font = pygame.font.Font(None, 36)
 
+clock = pygame.time.Clock()
+
 # Create game window
 window = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('Brick Game')
+
+# Set up game clock
+clock = pygame.time.Clock()
 
 # Paddle properties
 paddle_width = 100
@@ -50,6 +54,7 @@ for row in range(brick_rows):
 # Main game loop
 running = True
 while running:
+    clock.tick(60)
     # Process events
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -66,6 +71,16 @@ while running:
     ball_x += ball_speed_x
     ball_y += ball_speed_y
     
+    # Ball collision with walls
+    if ball_x < 0 or ball_x > WIDTH - ball_size:
+        ball_speed_x = -ball_speed_x
+    if ball_y < 0:
+        ball_speed_y = -ball_speed_y
+    
+    # Ball collision with paddle
+    if pygame.Rect(paddle_x, paddle_y, paddle_width, paddle_height).colliderect(pygame.Rect(ball_x, ball_y, ball_size, ball_size)):
+        ball_speed_y = -ball_speed_y
+    
     # Fill screen with white
     window.fill(WHITE)
     
@@ -81,7 +96,6 @@ while running:
     
     # Update display
     pygame.display.update()
-    
 
 # Quit pygame
 pygame.quit()
