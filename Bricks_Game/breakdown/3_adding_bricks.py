@@ -1,6 +1,13 @@
+#Task1: You have to create multiple brick Rect objects and store them in the list.
+#brick_rows = 5, brick_cols = 9, brick_width = 78, brick_height = 20, brick_padding = 10
+
+#Task2: You have to create an empty list named "bricks" to store all the bricks.
+
+#Task3: 
+
 import pygame
 
-# Initialize pygame
+# Initialize pygame 
 pygame.init()
 
 # Define constants
@@ -26,12 +33,6 @@ paddle_y = HEIGHT - paddle_height - 20
 paddle_speed = 10
 
 # Bricks
-brick_rows = 5
-brick_cols = 9
-brick_width = 78
-brick_height = 20
-brick_padding = 10
-bricks = []
 
 # Create bricks
 for row in range(brick_rows):
