@@ -24,11 +24,10 @@ player_x, player_y = 0, 450
 player_width, player_height = 50, 50
 player_speed = 1
 
-pygame.font.init()
 font = pygame.font.Font(None, 36)
 
 running = True
-
+mouse_lines = []
 while running:
   clock.tick(60)
   for event in pygame.event.get():
@@ -42,17 +41,15 @@ while running:
     player_x = player_x - player_speed
   if keys[pygame.K_UP] and player_y > 0:
     player_y = player_y - player_speed
-  if keys[pygame.K_DOWN] and (player_y<window_width-player_height):
+  if keys[pygame.K_DOWN] and (player_y<window_height-player_height):
     player_y = player_y + player_speed
 
   window.fill((255, 255, 255))
-
   player = pygame.draw.rect(window, green, (player_x, player_y, player_width, player_height))
-
   win = pygame.draw.rect(window, blue, (450, 0, 70, 70))
 
   #This is for checking the losing status.
-  #We use for loop to check, if our player collides with any of the obstacles.
+  # #We use for loop to check, if our player collides with any of the obstacles.
   for obstacle in obstacles:
     #colliderect method tell us, if we collided with another rect object.
     if player.colliderect(obstacle):
@@ -71,6 +68,10 @@ while running:
     #Here we are rendering win message and placing it on window surface object.
     you_win_text = font.render('You Win', True, (0, 255, 0))
     window.blit(you_win_text, (230, 250))
+    pygame.display.update()
+    pygame.time.delay(2000)
+    running = False
+
 
   for object in obstacles:
     pygame.draw.rect(window, brown, object)

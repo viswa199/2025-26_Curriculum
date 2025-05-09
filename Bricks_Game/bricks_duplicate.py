@@ -34,6 +34,7 @@ brick_width = 78
 brick_height = 20
 brick_padding = 10
 bricks = []
+bricks_positions = []
 
 # Ball properties
 ball_size = 20
@@ -47,7 +48,11 @@ for row in range(brick_rows):
     for col in range(brick_cols):
         brick_x = col * (brick_width + brick_padding) + brick_padding
         brick_y = row * (brick_height + brick_padding) + brick_padding
+        #bricks_positions.append((brick_x, brick_y))
         bricks.append(pygame.Rect(brick_x, brick_y, brick_width, brick_height))
+
+# print(bricks_positions)
+# exit()
 
 # Function to reset the game
 def reset_game():
@@ -105,7 +110,7 @@ while running:
         ball_speed_y = -ball_speed_y
     
     # Ball collision with bricks
-    for brick in bricks[:]:  # Create a copy of the list to safely remove items
+    for brick in bricks:  # Create a copy of the list to safely remove items
         if brick.colliderect(pygame.Rect(ball_x, ball_y, ball_size, ball_size)):
             bricks.remove(brick)
             ball_speed_y = -ball_speed_y

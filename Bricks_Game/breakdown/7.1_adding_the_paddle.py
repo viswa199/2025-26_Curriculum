@@ -27,7 +27,7 @@ pygame.display.set_caption('Brick Game')
 
 
 # Paddle properties
-
+#Task1
 
 # # Main game loop
 running = True
