@@ -37,8 +37,8 @@ paddle_y = HEIGHT - paddle_height - 20
 paddle_speed = 10
 
 # Bricks
-#Task1
-#Task2
+#Task1(create the variables specified in the Task1 above.)
+#Task2(create an empty list named bricks)
 
 # Create bricks
 for row in range(brick_rows):
@@ -46,7 +46,7 @@ for row in range(brick_rows):
         brick_x = col * (brick_width + brick_padding) + brick_padding
         brick_y = row * (brick_height + brick_padding) + brick_padding
         #insert your code.
-        #Task3
+        #Task3(append a new rect object to the bricks list with (x,y) as (brick_x, brick_y) and (width, height) as (brick_width, brick_height))
 
 # Main game loop
 running = True
