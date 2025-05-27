@@ -1,3 +1,5 @@
+#Task: print the element 4 in the lst2.(You have to access the element using multiple indexes)
+
 #Nested list also known as 2D list is a list inside of another list.
 #Basically here we are storing a list as an element of another list.
 

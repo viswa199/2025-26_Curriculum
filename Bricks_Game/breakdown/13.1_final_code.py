@@ -115,7 +115,7 @@ while running:
         pygame.draw.rect(window, BLACK, brick)
     
     # Check for win
-    if not bricks:
+    if len(bricks) == 0:
         you_win_text = font.render('You Win! Press R to play again', True, GREEN)
         window.blit(you_win_text, (200, 300))
     

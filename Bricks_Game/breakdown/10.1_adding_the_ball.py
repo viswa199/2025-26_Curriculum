@@ -1,5 +1,10 @@
-#Task1: Create the variables and dimensions of the ball.
+#Task: Create the variables and dimensions of the ball.
 #ball_size = 20, ball_x = WIDTH // 2, ball_y = HEIGHT // 2, ball_speed_x = 5, ball_speed_y = 5
+
+'''
+Note: for drawing paddle we are using red color by creating a variable called RED and giving it RGB value for red.
+You should create this variable by yourself.
+'''
 
 import pygame
 
@@ -10,8 +15,8 @@ pygame.init()
 WIDTH, HEIGHT = 800, 600
 BLUE = (0, 0, 255)
 BLACK = (0, 0, 0)
-RED = (255, 0, 0)
 WHITE = (255, 255, 255)
+#create a variable called RED and give it a RGB value for red.
 
 # Font setup
 font = pygame.font.Font(None, 36)
@@ -38,7 +43,7 @@ brick_padding = 10
 bricks = []
 
 # Ball properties
-#Task1
+#Task
 
 # Create bricks
 for row in range(brick_rows):

@@ -4,7 +4,11 @@
 
 #Task2: Create a rect object named "paddle" using above variables.
 
-#Task3: Draw this rect object onto the window screen.
+#Task3: Draw this rect object onto the window screen(The paddle color should be BLUE or whatever you like).
+'''
+Note: for drawing paddle we are using blue color by creating a variable called BLUE and giving it RGB value for blue.
+You should create this variable by yourself.
+'''
 
 import pygame
 
@@ -13,10 +17,8 @@ pygame.init()
 
 # # Define constants
 WIDTH, HEIGHT = 800, 600
-BLUE = (0, 0, 255)
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
 WHITE = (255, 255, 255)
+#create a variable called BLUE and give it RGB value for blue.
 
 # # Font setup
 font = pygame.font.Font(None, 36)
@@ -40,7 +42,7 @@ while running:
     # # Fill screen with white
     window.fill(WHITE)
     
-    # Draw paddle
+    # Draw paddle(BLUE color for paddle.)
     
     # Update display
     pygame.display.update()

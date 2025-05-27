@@ -1,3 +1,12 @@
+#Task: You should handle winning condition i.e. when you finish all the bricks.
+#You can find the task by going through the entire code.
+
+'''
+You win when you finishes every brick i.e. the bricks list is empty.
+The condition for checking if you won or not is to check if the bricks list is empty.
+1. Check the bricks list is empty or not.
+'''
+
 import pygame
 
 # Initialize pygame
@@ -51,8 +60,6 @@ for row in range(brick_rows):
         brick_y = row * (brick_height + brick_padding) + brick_padding
         bricks.append(pygame.Rect(brick_x, brick_y, brick_width, brick_height))
 
-bricks = []
-
 # Main game loop
 running = True
 while running:
@@ -85,7 +92,7 @@ while running:
         ball_speed_y = -ball_speed_y
     
     # Ball collision with bricks
-    for brick in bricks[:]:  # Create a copy of the list to safely remove items
+    for brick in bricks:  # Create a copy of the list to safely remove items
         if brick.colliderect(pygame.Rect(ball_x, ball_y, ball_size, ball_size)):
             bricks.remove(brick)
             ball_speed_y = -ball_speed_y
@@ -94,6 +101,14 @@ while running:
     if ball_y > HEIGHT:
         you_lost_text = font.render('You Lost', True, BLACK)
         window.blit(you_lost_text, (340, 300))
+        pygame.display.update()
+        pygame.time.delay(3000)
+        running = False
+
+    #Task(remove the True keyword and write you logic in the if statement.)
+    if True:
+        you_win_text = font.render('You Win! Press R to play again', True, GREEN)
+        window.blit(you_win_text, (200, 300))
         pygame.display.update()
         pygame.time.delay(3000)
         running = False

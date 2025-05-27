@@ -1,3 +1,11 @@
+#Task: Change the y direction of the ball, when the ball collides with the paddle.
+
+'''
+Here, we are handling the collision between the ball and the paddle. when the ball collided with the paddle,
+It changes its y direction.
+(ball_speed_y = -ball_speed_y)
+'''
+
 import pygame
 
 # Initialize pygame
@@ -79,7 +87,8 @@ while running:
     
     # Ball collision with paddle
     if pygame.Rect(paddle_x, paddle_y, paddle_width, paddle_height).colliderect(pygame.Rect(ball_x, ball_y, ball_size, ball_size)):
-        ball_speed_y = -ball_speed_y
+        #Task
+        pass
     
     # Fill screen with white
     window.fill(WHITE)

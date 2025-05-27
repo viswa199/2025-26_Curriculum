@@ -1,3 +1,13 @@
+#Task: You should handle the collision between ball and bricks.
+
+'''
+The logic is when the ball collided with any of the brick, the brick vanishes(basically we remove that particular brick from the bricks 
+list.) and we change the y direction of the ball.(ball_speed_y = -ball_speed_y)
+So basically, there are two things that you have to do when a ball collides with brick.
+1. remove that particular brick from the bricks list.
+2. change the y-direction of the ball.
+'''
+
 import pygame
 
 # Initialize pygame
@@ -85,10 +95,12 @@ while running:
         ball_speed_y = -ball_speed_y
     
     # Ball collision with bricks
-    for brick in bricks[:]:  # Create a copy of the list to safely remove items
+    #Task(remove the pass line and write your logic)
+    for brick in bricks:
         if brick.colliderect(pygame.Rect(ball_x, ball_y, ball_size, ball_size)):
-            bricks.remove(brick)
-            ball_speed_y = -ball_speed_y
+            pass
+            # bricks.remove(brick)
+            # ball_speed_y = -ball_speed_y
     
     # Check for game over
     if ball_y > HEIGHT:
@@ -97,6 +109,7 @@ while running:
         pygame.display.update()
         pygame.time.delay(3000)
         running = False
+    
     
     window.fill(WHITE)
     

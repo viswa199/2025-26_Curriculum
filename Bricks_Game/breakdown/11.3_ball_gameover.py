@@ -1,3 +1,13 @@
+#Task: You need to check, if the ball moves down the window screen i.e. ball missed the paddle.
+#you can find the task by going through the entire code.
+
+'''
+If you can remember, we implemented the ball collision with walls(but we left out ball collision with bottom wall) because, We are using
+paddle to control the ball movement.
+If the ball misses the paddle, It will reach out of the window and the player loses.
+If the ball_y is greater than window height, the ball missed the player.
+'''
+
 import pygame
 
 # Initialize pygame
@@ -82,7 +92,9 @@ while running:
         ball_speed_y = -ball_speed_y
     
     # Check for game over
-    if ball_y > HEIGHT:
+    #Task
+    #remove True and add your condition by reading the instructions above carefully.
+    if True:
         you_lost_text = font.render('You Lost', True, BLACK)
         window.blit(you_lost_text, (340, 300))
         pygame.display.update()

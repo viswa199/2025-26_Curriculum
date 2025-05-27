@@ -3,6 +3,11 @@
 
 #You can find where to start your tasks by going through the code.
 
+'''
+Note: for drawing bricks we are using black color by creating a variable called BLACK and giving it RGB value for black.
+You should create this variable by yourself.
+'''
+
 import pygame
 
 # Initialize pygame 
@@ -11,9 +16,8 @@ pygame.init()
 # Define constants
 WIDTH, HEIGHT = 800, 600
 BLUE = (0, 0, 255)
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
 WHITE = (255, 255, 255)
+#create a variable called BLACK and give it RGB value for black.
 
 # Font setup
 font = pygame.font.Font(None, 36)
@@ -71,7 +75,7 @@ while running:
     # Draw paddle
     pygame.draw.rect(window, BLUE, [paddle_x, paddle_y, paddle_width, paddle_height])
 
-    #Draw all the bricks using for loop
+    #Draw all the bricks using for loop(Use BLACK color)
     #Task1
 
     # Update display

@@ -1,9 +1,11 @@
 #Task: Create odd numbers between 0 and 100.
 
-#range will generate a sequence of numbers in the given range.
-#range can have three arguments: start(optional), stop, step(optional)
-#If you only provided one argument to the range function, it is stop. start has default value of 0 and step has default value of 1.
-#range is exclusive of stop, it does not include stop value.
+'''
+range will generate a sequence of numbers in the given range.
+range can have three arguments: start(optional), stop, step(optional)
+If you only provided one argument to the range function, it is stop. start has default value of 0 and step has default value of 1.
+range is exclusive of stop, it does not include stop value.
+'''
 
 #We only provided one argument to the range, 10 is the value of stop. start & step have default values.
 numbers = list(range(10))
