@@ -69,8 +69,8 @@ while running:
         paddle_x += paddle_speed
     
     # Move the ball
-    ball_x += ball_speed
-    ball_y += ball_speed
+    ball_x += ball_speed_x
+    ball_y += ball_speed_x
     
     # Fill screen with white
     window.fill(WHITE)
