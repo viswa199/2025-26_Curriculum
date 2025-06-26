@@ -1,11 +1,6 @@
-#Task: Increment the ball_x and ball_y by ball_speed_x and ball_speed_y respectively.
-#You can find, where to write this task by going through the entire program.
-
-'''
-The ball moves diagonally only if we change both of its coordinates i.e. "x and y". The ball movement is completely automated
-in this course. Initially, the ball position is at the center of the window screen. We should increase both of the ball coordinates by
-ball_speed_x and ball_speed_y respectively, so that the ball moves diagonally.
-'''
+# The ball moves diagonally only if we change both of its coordinates i.e. "x and y". The ball movement is completely automated
+# in this course. Initially, the ball position is at the center of the window screen. We should increase both of the ball coordinates by
+# ball_speed_x and ball_speed_y respectively, so that the ball moves diagonally.
 
 import pygame
 
@@ -74,7 +69,8 @@ while running:
         paddle_x += paddle_speed
     
     # Move the ball
-    #Task
+    ball_x += ball_speed
+    ball_y += ball_speed
     
     # Fill screen with white
     window.fill(WHITE)
