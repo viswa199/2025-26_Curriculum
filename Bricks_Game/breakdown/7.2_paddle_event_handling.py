@@ -1,8 +1,8 @@
 # clock.tick(60) controls the speed of the game loop by setting the frame rate to 60 frames per second
 
-# From line 48 to 52 code checks if the left arrow key is pressed
+# From line 50 to 54 code checks if the left arrow key is pressed
 # and moves the paddle left by decreasing its x-position.
-# From line 58 to 61 code makes sure the paddle stays inside the screen
+# From line 60 to 63 code makes sure the paddle stays inside the screen
 # — it stops at the left and right edges so it doesn’t go outside.
 
 # Task 1: Add code to move the paddle right when RIGHT arrow key is pressed
