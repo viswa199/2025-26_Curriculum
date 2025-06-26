@@ -1,11 +1,10 @@
 # clock.tick(60) controls the speed of the game loop by setting the frame rate to 60 frames per second
 
-# From line 50 to 54 code checks if the left arrow key is pressed
+# From line 48 to 52 code checks if the left arrow key is pressed
 # and moves the paddle left by decreasing its x-position.
-# From line 60 to 63 code makes sure the paddle stays inside the screen
-# — it stops at the left and right edges so it doesn’t go outside.
 
 # Task 1: Add code to move the paddle right when RIGHT arrow key is pressed
+# The condition for restricting paddle on the right side (paddle_x < WIDTH - paddle_width)
 
 import pygame
 
@@ -47,20 +46,12 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    # Handle key presses
+    # Handle keyboard input
     keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT] and paddle_x > 0:
+        paddle_x -= paddle_speed
+    # Task 1: Add code to move the paddle right when RIGHT arrow key is pressed and restrict the paddle moment on the right side
 
-    if keys[pygame.K_LEFT]:          # If LEFT arrow is pressed
-        paddle_x -= paddle_speed     # Move paddle to the left
-
-    # Task 1: Add code to move the paddle right when RIGHT arrow key is pressed
-
-
-    # Restrict paddle within screen boundaries
-    if paddle_x < 0:
-        paddle_x = 0  # Stop at the left edge
-    if paddle_x > WIDTH - paddle_width:
-        paddle_x = WIDTH - paddle_width  # Stop at the right edge
 
     # Fill screen with white
     window.fill(WHITE)
