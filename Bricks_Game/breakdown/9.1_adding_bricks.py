@@ -4,7 +4,7 @@
 # Calculate the position (x, y) for each brick.
 # Create a rectangle for each brick using pygame.Rect().
 # Add that brick to the list using bricks.append()
-
+#Brick padding adds space between bricks so they don’t touch each other and look neatly arranged on line 54 and 55.
 
 # Task 1 : Create an empty list name bricks to hold all bricks on line 48.
 # Task 2 : Add the brick to the bricks list using append on line 60.
