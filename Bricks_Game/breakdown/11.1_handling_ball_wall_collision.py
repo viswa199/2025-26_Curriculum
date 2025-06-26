@@ -1,6 +1,6 @@
-# When a ball collided with any of the left and right boundary walls, we should change the x direction of the ball.
+# When a ball collided with any of the left and right boundary walls, change the x direction of the ball.
 # (ball_speed_x = -ball_speed_x)
-# When a ball collided with any of the up and bottom boundary walls, we should change the x direction of the ball.
+# When a ball collided with any of the up and bottom boundary walls, change the x direction of the ball.
 # (ball_speed_y = -ball_speed_y)
 
 #Task: You can find the task on line 80.
