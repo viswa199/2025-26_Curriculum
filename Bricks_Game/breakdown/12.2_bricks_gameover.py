@@ -1,11 +1,7 @@
-#Task: You should handle winning condition i.e. when you finish all the bricks.
-#You can find the task by going through the entire code.
+# You win the game when all bricks are cleared, meaning the bricks list becomes empty.
+# To check for a win, simply verify if the bricks list is empty if len(bricks==0) on line 105.
 
-'''
-You win when you finishes every brick i.e. the bricks list is empty.
-The condition for checking if you won or not is to check if the bricks list is empty.
-1. Check the bricks list is empty or not.
-'''
+#Task: You should handle winning condition i.e. when you finish all the bricks on line no 105.
 
 import pygame
 
