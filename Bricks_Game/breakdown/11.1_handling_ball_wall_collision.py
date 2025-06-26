@@ -3,6 +3,8 @@
 # When a ball collided with any of the up and bottom boundary walls, we should change the x direction of the ball.
 # (ball_speed_y = -ball_speed_y)
 
+#Task: You can find the task on line 80.
+
 import pygame
 
 # Initialize pygame
