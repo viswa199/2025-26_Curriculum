@@ -1,10 +1,9 @@
-# we remove that particular brick from the bricks 
-# list.) and we change the y direction of the ball.(ball_speed_y = -ball_speed_y)
+# change the y direction of the ball.(ball_speed_y = -ball_speed_y)
 # There are two things that you have to do when a ball collides with brick.
 # 1. remove that particular brick from the bricks list.
 # 2. change the y-direction of the ball.
 
-#Task: You can find the tasks on line 99.
+#Task: You can find the tasks on line 98.
 
 import pygame
 
