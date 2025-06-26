@@ -1,7 +1,7 @@
-# change the y direction of the ball.(ball_speed_y = -ball_speed_y)
+# change the y direction of the ball.(ball_speed_y = -ball_speed_y) on line 100.
 # There are two things that you have to do when a ball collides with brick.
-# 1. remove that particular brick from the bricks list.
-# 2. change the y-direction of the ball.
+# 1. remove that particular brick from the bricks list.(line no 99)
+# 2. change the y-direction of the ball. (line no 100)
 
 #Task: You can find the tasks on line 98.
 
