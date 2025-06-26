@@ -1,6 +1,6 @@
-# The logic is when the ball collided with any of the brick, the brick vanishes(basically we remove that particular brick from the bricks 
+# we remove that particular brick from the bricks 
 # list.) and we change the y direction of the ball.(ball_speed_y = -ball_speed_y)
-# So basically, there are two things that you have to do when a ball collides with brick.
+# There are two things that you have to do when a ball collides with brick.
 # 1. remove that particular brick from the bricks list.
 # 2. change the y-direction of the ball.
 
