@@ -1,5 +1,5 @@
-# If you can remember, we implemented the ball collision with walls(but we left out ball collision with bottom wall) because, We are using
-# paddle to control the ball movement.
+# If you can remember, we implemented the ball collision with walls(but we left out ball collision with bottom wall) 
+# because, We are using paddle to control the ball movement.
 # If the ball misses the paddle, It will reach out of the window and the player loses.
 # If the ball_y is greater than window height (ball_y > HEIGHT), the ball missed the player on line 95
 
