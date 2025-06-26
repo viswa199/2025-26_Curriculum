@@ -1,9 +1,10 @@
-# If you can remember, we implemented the ball collision with walls(but we left out ball collision with bottom wall) 
+# If you can remember, we implemented the ball collision with walls
+#(but we left out ball collision with bottom wall) 
 # because, We are using paddle to control the ball movement.
 # If the ball misses the paddle, It will reach out of the window and the player loses.
-# If the ball_y is greater than window height (ball_y > HEIGHT), the ball missed the player on line 95
+# If the ball_y is greater than window height (ball_y > HEIGHT), the ball missed the player on line 96
 
-#Task: You need to check, if the ball moves down the window screen i.e. ball missed the paddle on line 95.
+#Task: You need to check, if the ball moves down the window screen i.e. ball missed the paddle on line 96.
 
 import pygame
 
