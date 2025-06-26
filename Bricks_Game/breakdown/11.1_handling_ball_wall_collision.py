@@ -1,16 +1,7 @@
-#Task: Handling collision between the ball and walls(boundaries of the screen.)
-#You can find the task by going through the entire code.
-
-'''
-We should handle the logic of what happens when there is a collision between a ball and a wall.
-When a ball collided with any of the left and right boundary walls, we should change the x direction of the ball.
-(ball_speed_x = -ball_speed_x)
-When a ball collided with any of the up and bottom boundary walls, we should change the x direction of the ball.
-(ball_speed_y = -ball_speed_y)
-
-We are not handling the collision between the ball and the bottom wall boundary, because if the ball misses the paddle
-the player loses the game.
-'''
+# When a ball collided with any of the left and right boundary walls, we should change the x direction of the ball.
+# (ball_speed_x = -ball_speed_x)
+# When a ball collided with any of the up and bottom boundary walls, we should change the x direction of the ball.
+# (ball_speed_y = -ball_speed_y)
 
 import pygame
 
@@ -86,7 +77,7 @@ while running:
     ball_y += ball_speed_y
     
     # Ball collision with walls
-    # Task
+    # Task: Uncomment the lines 81 t0 84 and observe the changes.
     # if ball_x < 0 or ball_x > WIDTH - ball_size:
     #     ball_speed_x = -ball_speed_x
     # if ball_y < 0:
