@@ -87,8 +87,8 @@ while running:
     
     # Ball collision with paddle
     if pygame.Rect(paddle_x, paddle_y, paddle_width, paddle_height).colliderect(pygame.Rect(ball_x, ball_y, ball_size, ball_size)):
-        #Task
-        pass
+        #Task: Uncomment the line 91 and observe what happens
+        #ball_speed_y = -ball_speed_y
     
     # Fill screen with white
     window.fill(WHITE)
